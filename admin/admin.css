@@ -1,0 +1,122 @@
+body {
+	background: #efefef;
+	margin: 10;
+}
+* {
+	box-sizing: border-box;
+}
+#container {
+	background: yellow;
+	max-width: 900px;
+	margin: auto;
+}
+#header {
+	background: orange;
+	height: 100px;
+	font: bold 2.1em Arial;
+	color: #4f71d6;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+	padding-top: 20px;
+}
+#menu {
+	width: 25%;
+	float: left;
+}
+#content {
+	background: white;
+	width: 75%;
+	min-height: 455px;
+	float: left;
+	padding: 10px;
+	overflow: auto;
+}
+#footer {
+	background: yellow;
+	height: 40px;
+	clear: both;
+	font: .8em Arial;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+}
+img {
+	width: 300px;
+    height: auto;
+	float: right;
+	margin: 0 0 10px 20px;
+	padding: 10px 10px 50px 10px;
+	background: white;
+	box-shadow: 1px 1px 5px black;
+}
+p {
+	text-align: justify;
+	font: 11px Tahoma;
+	color: #333;
+	line-height: 150%;
+}
+#menu ul {
+	list-style: none;
+	padding: 10;
+	
+}
+#menu ul li a {
+	font: bold 1.1em Arial;
+	color: orange;
+	text-decoration: none;
+	border: 1px solid orange;
+	background: white;
+	margin: 10px;
+	padding: 10px;
+	width: 90%;
+	display: block;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px black;
+}
+#menu ul li a:hover {
+	color: white;
+	background: orange;
+}
+#mnav {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {	
+	#menu {
+		width: 100%;
+	}
+	#content {
+		width: 100%;
+	}
+	#menu ul li a {
+		font: bold 1em Arial;
+		float: left;
+		margin: 1%;
+		width: 23%;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#mnav {
+		display: block;
+		width: 30px;
+		padding: 5px;
+		font: bold 1.1em Arial;
+		color: orange;
+		border: 1px solid orange;
+		background: white;
+		cursor: pointer;
+		float: right;
+	}
+	#menu ul  {
+		display: none;
+	}
+	#menu ul li a {
+		font: bold 1em Arial;
+		float: none;
+		width: 95%;
+	}
+}	
